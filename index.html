@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My porfolio</title>
+    <link rel = "stylesheet" href = "style.css">
+    <link rel = "stylesheet" href = "mediaqueries.css">
+</head>
+<body>
+    <nav id = "desktop-nav">
+        <div class = "logo"> Shreyansh Singh</div>
+        <div> 
+            <ul class = "nav-links">
+                <li><a href = "#about">About</a></li>
+                <li><a href = "#experience">Experience</a></li>
+                <li><a href = "#projects">Projects</a></li>
+                <li><a href = "#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id = "hamburger-nav">
+        <div class = "logo"> Shreyansh Singh</div>
+        <div class = "hamburger-menu">
+            <div class = "hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href = "#about" onclick="toggleMenu()">About</a></li>
+                <li><a href = "#experience" onclick="toggleMenu()">Experience</a></li>
+                <li><a href = "#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href = "#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id = "profile">
+        <div class = "section__pic-container">
+            <img src="./assets/profile-pic.png" alt="Shreyansh Singh profile picture">
+        </div>
+        <div class = "section__text">
+            <p class="section__text__p1">Hello I'm</p>
+            <h1 class="title">Shreyansh Singh</h1>
+            <p class="section__text__p2">Software Development Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/Resume-Shreyansh.pdf')">Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile" class="icon" onclick="location.href= 'https://www.linkedin.com/in/shreyansh-singh0108/' ">
+                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href= 'https://github.com/shresingh05' ">
+                
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1"></p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/about-pic.png" alt="profile picture" class=" about-pic">
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="Experience-icon" class="icon"/>
+                        <h3>Experience</h3>
+                        <p>Internship <br>Java Development & Frontend Development</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="Education" class="icon"/>
+                        <h3>Education</h3>
+                        <p>B.Tech<br>Electrical & Electronics Engineering</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p>Greetings! I'm Shreyansh Kumar Singh, a Electrical and Electronics Engineering student at Galgotia
+                        College of Engineering and Technology and also a enthusiastic Software Developer with knowledge in different programming languages,
+                        Web Development and Cloud services.
+                        My technical proficiency spans: <mark> Java</mark>, <mark>Python</mark>, <mark>c++</mark>, <mark>AWS services</mark>, <mark>Web Development</mark>, <mark>Cloud computing</mark> and <mark>Data Visualisation Tools</mark>. I am
+                        driven by my curiosity to solve complex challenges and my dedication to delivering high-quality software.
+                        When not engaged with code. I'm a fervent traveler and food enthusiastic, always on the lookout for the next adventure or culinary
+                        discovery. Hiking, reading, gaming, and experimenting new food recipes offer me a world of experiences.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow-icon" class="icon arrow" onclick="loaction.href ='./#experience'  "/>
+    </section>
+    <section id="experience">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Experience</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Java Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>Java</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>DSA</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>SQL</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>AWS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>MongoDB</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>SpringBoot</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                <div class="details-containers">
+                    <h2 class="experience-sub-title">Frontend Development</h2>
+                    <div class="article-container">
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>HTML</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>CSS</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>SASS</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Experienced</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>React</h3>
+                                <p>Intermediate</p>
+                            </div>
+                        </article>
+                        <article>
+                            <img src="./assets/checkmark.png" alt="Experience-icon" class="icon"/>
+                            <div>
+                                <h3>Angular</h3>
+                                <p>Basic</p>
+                            </div>
+                        </article>
+                    </div>
+                    
+                </div>
+                
+            </div>
+            <div class="text-container">
+                <p>1.  I have done my <mark>Internship in "CODSOFT"</mark> as a Java Developer from July 20 2023 - Aug 20 2023, Here I contributed to various software Development
+                    projects. I gained hands-on experiece in Java Programming and software engineering practices. <br> 2.  My second <mark> Internship was as a Teaching Assistant in N.B.S Academy </mark>
+                    Gorakhpur, here I facilitated engaging and interactive classroom sessions to students in class 11 and 12, teaching the fundamental concept and
+                    practical application of Java programming and HTML.
+                </p>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow-icon" class="icon arrow" onclick="loaction.href ='./#projects'  "/>
+    </section>
+    <section id="projects">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Projects</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-1.png" alt="project 1" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">CineFlix</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/shresingh05/cineflix' ">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://shresingh05.github.io/cineflix/' ">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-2.png" alt="project 1" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Amazon-clone</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/shresingh05/Amazon-app' " target = "_blank">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://shresingh05.github.io/Amazon-app/' ">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+            <div class="details-container color-container">
+                <div class="article-container">
+                    <img src="./assets/project-3.png" alt="project 1" class="project-img"/>
+                </div>
+                <h2 class="experience-sub-title project-title">Music-Player</h2>
+                <div class="btn-container">
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://github.com/shresingh05/Music-player' ">
+                        Github
+                    </button>
+                    <button class="btn btn-color-2 project-btn" onclick="location.href= 'https://shresingh05.github.io/Music-player/' ">
+                        Live Demo
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+            <div class="btn-container">
+                <button class="btn btn-color-2 project-btn" onclick="location.href = 'https://github.com/shresingh05?tab=repositories' ">
+                More Projects </button>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow-icon" class="icon arrow" onclick="loaction.href ='./#projects'  "/>
+    </section>
+    <section id="contact">
+        <p class="section__text__p1"></p>
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+            <div class="contact-info-container">
+                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon "/>
+                <p><a href="mailto:ku.shrey.singh@gmail.com">ku.shrey.singh@gmai.com</a></p>
+            </div>
+            <div class="contact-info-container">
+                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+                <p><a href="https://www.linkedin.com/in/shreyansh-singh0108/">LinkedIn</a></p>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <nav>
+            <div class="nav-links-container">
+                <ul class = "nav-links">
+                    <li><a href = "#about">About</a></li>
+                    <li><a href = "#experience">Experience</a></li>
+                    <li><a href = "#projects">Projects</a></li>
+                    <li><a href = "#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <p>Copyright &#169; Shreyansh Singh.</p>
+    </footer>
+    <script src = "script.js"></script>
+</body>
+</html>
